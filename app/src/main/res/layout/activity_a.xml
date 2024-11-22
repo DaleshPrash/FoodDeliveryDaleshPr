@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:title="Delicious food delivery to your address"
+        android:titleTextColor="@android:color/white"
+        android:elevation="4dp" />
+
+    <!-- Customer Fragment -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/customerFragmentContainer"
+        android:name="com.example.fooddeliverydaleshpr.ui.CustomerFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/restaurantFragmentContainer"
+        app:layout_constraintVertical_weight="1" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/customerFragmentContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Restaurant Fragment -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/restaurantFragmentContainer"
+        android:name="com.example.fooddeliverydaleshpr.ui.RestaurantFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/customerFragmentContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cartFragmentContainer"
+        app:layout_constraintVertical_weight="3" />
+
+    <!-- Sticky Cart Fragment -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/cartFragmentContainer"
+        android:name="com.example.fooddeliverydaleshpr.ui.CartFragmentA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="8dp" />
+    <!-- when cart non-empty add in button checkout below cart a -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <!-- Restaurant Name -->
+    <TextView
+        android:id="@+id/restaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La Gourmet Pizza"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Restaurant Rating -->
+    <TextView
+        android:id="@+id/restaurantRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.7 ⭐ (1,500+)"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/restaurantName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Reorders Info -->
+    <TextView
+        android:id="@+id/restaurantReorders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500+ people reordered"
+        app:layout_constraintTop_toBottomOf="@id/restaurantRating"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- RadioGroup for Delivery Options -->
+    <RadioGroup
+        android:id="@+id/orderOptions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/restaurantReorders"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioPickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup" />
+
+        <RadioButton
+            android:id="@+id/radioGroupOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group Order" />
+    </RadioGroup>
+
+    <!-- Pricing and Delivery Time -->
+    <TextView
+        android:id="@+id/pricingInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="$0 Delivery Fee on $15+"
+        android:textColor="#8B5E3C"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/orderOptions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/arrivalInfo"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/arrivalInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="15 min\nEarliest arrival"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/pricingInfo"
+        app:layout_constraintStart_toEndOf="@id/pricingInfo"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <include layout="@layout/layout_menu_section" />
+</androidx.constraintlayout.widget.ConstraintLayout>
