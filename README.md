@@ -42,3 +42,12 @@ Technical Highlights:
 Screenshots:
 
 
+<img width="348" alt="Screenshot 2024-11-22 at 4 42 04 PM" src="https://github.com/user-attachments/assets/c10b02f0-9af3-490b-a3b6-9681e729ee0b">
+<img width="506" alt="Screenshot 2024-11-22 at 4 27 20 PM" src="https://github.com/user-attachments/assets/53d9f252-5809-4c82-9dde-16970ed61fd7">
+<img width="498" alt="Screenshot 2024-11-22 at 4 27 06 PM" src="https://github.com/user-attachments/assets/93fefe07-4eae-4118-ae3c-3093609f388e">
+<img width="532" alt="Screenshot 2024-11-22 at 4 20 20 PM" src="https://github.com/user-attachments/assets/4d034ac4-e8d0-4c15-a298-be78f1f8425b">
+
+
+<img width="1920" alt="Screenshot 2024-11-22 at 5 08 10 PM" src="https://github.com/user-attachments/assets/d86e1a17-41c3-45df-8891-2eb5884a349e">
+<img width="1336" alt="Screenshot 2024-11-22 at 5 08 01 PM" src="https://github.com/user-attachments/assets/5b104b93-55d9-40c2-b396-496a6f235ddc">
+
